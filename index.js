@@ -57,16 +57,15 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
+     var itemRemoved = false;
   for (var i = 0; i < cart.length; i++) {
-    var itemRemoved = false;
     var getName = cart[i];
     if (getName.itemName === item) {
       cart.splice(i, 1);
       itemRemoved = true;
       }  else {itemRemoved = false;}
   } if (itemRemoved === false) {
-    return "That item is not in your cart."
+    return "That item is not in your cart.";
   } else {return cart}
   
 
