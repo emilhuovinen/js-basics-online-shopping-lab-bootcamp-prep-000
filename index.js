@@ -72,7 +72,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-    totalPrice = 0;
+    var totalPrice = 0;
   if (cardNumber) {
     for (var i = 0; i < cart.length; i++) {
       var getPrice = cart[i];
