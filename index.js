@@ -61,7 +61,9 @@ function removeFromCart(item) {
     var getName = cart[i];
     if (getName.itemName === item) {
       cart.splice(i, 1);
-    } else if (getName.itemName )
+    } else if (getName.itemName !== item) {
+      return `This item is not in your cart.`
+    }
     
   }
   
