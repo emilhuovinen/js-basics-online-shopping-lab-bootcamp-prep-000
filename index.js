@@ -79,8 +79,10 @@ function placeOrder(cardNumber) {
       var price = getPrice.itemPrice;
       totalPrice += price
     }
-    return `Your total price is $${totalPrice}, which will be charged to the card ${cardNumber}.`
+    
     cart = [];
+    return `Your total price is $${totalPrice}, which will be charged to the card ${cardNumber}.`
+    
     
   } else {
     return `Sorry, we don't have a credit card on file for you.`
